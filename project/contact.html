@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-hea" >
+       <nav>
+           <a href="index.html"><img src="images/logo.png"></a>
+           <div class="navlinks" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="course.html">COURSE</a></li>
+                   <li><a href="blog.html">BLOG</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                  
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav> 
+       <h1>Contact Us </h1>
+    </section>
+
+
+
+    <!-- ---------------------contact us------------------------------ -->
+
+   <section class="loc">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7776.596969874715!2d77.57248740450446!3d12.95274226951776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15eee9e9dfff%3A0xea56b6ad7b85db1a!2sVishweshwarapura%2C%20Shankarapura%2C%20Bengaluru%2C%20Karnataka%20560004!5e0!3m2!1sen!2sin!4v1653991122679!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   </section>
+
+
+   <section class="contact-us">
+       <div class="row">
+           <div class="contact-col">
+
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>kr road  vvpuram</h5>
+                    <p>Bangalore,Karnataka</p>
+                </span> 
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 9945471308</h5>
+                    <p>Monday to Saturday 10am to 6pm</p>
+                </span> 
+            </div>
+           
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>shivutadaki@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span> 
+            </div>
+            
+           </div>
+           <div class="contact-col">
+
+            <form action="form-handler.php" method="post">
+
+                <input type="text" name="name" placeholder="enter your name" required>
+                <input type="email" name="email"  placeholder="enter email address" required>
+                <input type="text" name="subject"  placeholder="enter your subject" required>
+                <textarea rows="8" name="name"  placeholder="message" required></textarea>
+                <button type="submit" class="btn red-btn">Send Message</button>
+
+            </form>
+
+
+           </div>
+       </div>
+   </section>
+
+
+
+
+    <!-- -----------------------footer---------------------- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minima delectus molestiae eius expedita nihil <br>vero molestias nulla rerum, maiores dolore, error voluptatem, inventore laborum!</p>
+        <div class="icons">
+
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+            <!-- <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i> -->
+            
+
+        </div>
+        
+        <p>Made with <i class="fa fa-heart-o"></i> by shivu</p>
+    </section>
+
+
+    
+
+    <!-- -----------------javascript----------------- -->
+   <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+           navLinks.style.right="0";
+       }
+       function hideMenu(){
+           navLinks.style.right="-200px";
+       }
+   </script>
+
+
+
+<script src="https://kit.fontawesome.com/ba209ddea0.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
